@@ -6,27 +6,28 @@
     --Dark-grayish-blue: hsl(236, 13%, 42%);
     --Very-dark-blue: hsl(240, 100%, 5%);
 }
-
-
-body{
-    background-color:var(--Off-white);
-    font-size: 15px;
-    margin:0 10%;
-    
-}
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
-     font-family: "inter","sans-serif"; 
+    font-family: "inter","sans-serif"; 
 }
+
+body{
+    background-color:var(--Off-white);
+    font-size: 15px;
+    margin:0 10%;
+    text-decoration: none;
+}
+
 
 nav{
     display:flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    /* height: 3rem; */
     /* background-color: aqua; */
     margin-top: 1rem;
 
@@ -43,6 +44,7 @@ ul{
 
 a,p{
     color: var(--Dark-grayish-blue);
+    text-decoration: none !important;
     
 }
 a:hover{
@@ -51,14 +53,15 @@ a:hover{
 .main{
     width: 100%;
     display: flex;
+    justify-content: space-between;
 }
 .hero{
-    width: 60%;
+    width: 66%;
     background-color:whitesmoke; 
     
 }
 .new{
-    width: 40%;
+    width: 30%;
     background-color: brown;
 } 
 .hero img{
@@ -74,29 +77,26 @@ a:hover{
 }
 
 .bright{
-    width: 60%;
-    /* background-color: aqua; */
+    width: 40%;
 }
 .bright h1{
     font-family: "inter";
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 3rem;
 }
-.readMore{
-    width: 40%;
-     /* background-color: brown;  */
+.read-more{
+    width: 60%;
      display: flex;
      flex-direction: column;
-     justify-content: space-between;
+     justify-content: space-around;
 }
 button{
     background-color: var(--Soft-red);
-    /* outline: none; */
-    padding: 10px;
+    outline: none;
+    padding: 15px;
     border: none;
     color: var(--Off-white);
-    
-
+    width: 50%;
 }
 
 button:hover{
@@ -157,8 +157,7 @@ hr{
 /* Footer css */
 footer{
     display: flex;
-    flex-direction: row;
-    
+    justify-content: space-between;
 }
 
 .footer-card{
@@ -202,7 +201,7 @@ footer{
     p{
         font-size: 1.3rem;
     }
-    menu{
+    .menu{
         display: block;
         height: 3rem;
     }
@@ -218,7 +217,7 @@ footer{
             display: block ;
    
    }
-   .hero,.new,.bright,.readmore{
+   .hero,.new,.bright,.read-more{
     width: 100%;
    }
    .main,.hero-content{
